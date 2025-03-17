@@ -259,7 +259,7 @@
         <div>
             <h1>Documentation</h1>
             <p>Welcome to the JSONbazaar documentation! This guide will help you understand how to use our API and explore various features.</p>
-            <p>API endpoints are available at <a href="#">https://localhost:8080/api</a>.</p>
+            <p>API endpoints are available at <a href="#">https://jsonbazaar.onrender.com/api</a>.</p>
             <ol>
                 <li>Users API - <a href="#users">Go to users endpoint</a></li>
                 <li>Products API - <a href="#products">Go to products endpoint</a></li>
@@ -283,7 +283,7 @@
                 <p>Retrieve a list of all users</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/users'</span>)<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/users'</span>)<br>
                           .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())<br>
                           .<span class="function">then</span>(<span class="keyword">data</span> => <span class="keyword">console</span>.<span class="function">log</span>(<span class="keyword">data</span>))
                     </code>
@@ -311,7 +311,7 @@
                 <p>Retrieve a specific user by their ID</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/users/1'</span>)<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/users/1'</span>)<br>
                           .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())<br>
                           .<span class="function">then</span>(<span class="keyword">data</span> => <span class="keyword">console</span>.<span class="function">log</span>(<span class="keyword">data</span>))
                     </code>
@@ -336,7 +336,7 @@
                 <p>Create a new user with required fields</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/users/create'</span>, {<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/users/create'</span>, {<br>
                           method: <span class="string">'POST'</span>,<br>
                           headers: { <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span> },<br>
                           body: <span class="function">JSON.stringify</span>({<br>
@@ -375,7 +375,7 @@
                 <p>Update an existing user's information</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/users/update/1'</span>, {<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/users/update/1'</span>, {<br>
                           method: <span class="string">'PUT'</span>,<br>
                           headers: { <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span> },<br>
                           body: <span class="function">JSON.stringify</span>({<br>
@@ -414,7 +414,7 @@
                 <p>Delete a user by their ID</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/users/delete/1'</span>, {<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/users/delete/1'</span>, {<br>
                           method: <span class="string">'DELETE'</span><br>
                         })<br>
                           .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())
@@ -440,7 +440,7 @@
                 <p>Retrieve a list of all products</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/products'</span>)<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/products'</span>)<br>
                           .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())<br>
                           .<span class="function">then</span>(<span class="keyword">data</span> => <span class="keyword">console</span>.<span class="function">log</span>(<span class="keyword">data</span>))
                     </code>
@@ -473,7 +473,7 @@
                 <p>Retrieve a specific product by its ID</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/products/1'</span>)<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/products/1'</span>)<br>
                           .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())<br>
                           .<span class="function">then</span>(<span class="keyword">data</span> => <span class="keyword">console</span>.<span class="function">log</span>(<span class="keyword">data</span>))
                     </code>
@@ -496,7 +496,7 @@
                 <p>Create a new product with required fields</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/products/create'</span>, {<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/products/create'</span>, {<br>
                           method: <span class="string">'POST'</span>,<br>
                           headers: { <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span> },<br>
                           body: <span class="function">JSON.stringify</span>({<br>
@@ -531,7 +531,7 @@
                 <p>Update an existing product's information</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/products/update/1'</span>, {<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/products/update/1'</span>, {<br>
                           method: <span class="string">'PUT'</span>,<br>
                           headers: { <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span> },<br>
                           body: <span class="function">JSON.stringify</span>({<br>
@@ -566,7 +566,7 @@
                 <p>Delete a product by its ID</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/products/delete/1'</span>, {<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/products/delete/1'</span>, {<br>
                           method: <span class="string">'DELETE'</span><br>
                         })<br>
                           .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())
@@ -592,7 +592,7 @@
     <p>Retrieve a list of all orders</p>
     <div class="code-block">
         <code>
-            <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/orders'</span>)<br>
+            <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/orders'</span>)<br>
               .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())<br>
               .<span class="function">then</span>(<span class="keyword">data</span> => <span class="keyword">console</span>.<span class="function">log</span>(<span class="keyword">data</span>))
         </code>
@@ -625,7 +625,7 @@
     <p>Retrieve a specific order by its ID</p>
     <div class="code-block">
         <code>
-            <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/orders/1'</span>)<br>
+            <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/orders/1'</span>)<br>
               .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())<br>
               .<span class="function">then</span>(<span class="keyword">data</span> => <span class="keyword">console</span>.<span class="function">log</span>(<span class="keyword">data</span>))
         </code>
@@ -656,7 +656,7 @@
     <p>Create a new order with required fields</p>
     <div class="code-block">
         <code>
-            <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/orders/create'</span>, {<br>
+            <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/orders/create'</span>, {<br>
               method: <span class="string">'POST'</span>,<br>
               headers: { <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span> },<br>
               body: <span class="function">JSON.stringify</span>({<br>
@@ -699,7 +699,7 @@
     <p>Update an existing order's information</p>
     <div class="code-block">
         <code>
-            <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/orders/update/1'</span>, {<br>
+            <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/orders/update/1'</span>, {<br>
               method: <span class="string">'PUT'</span>,<br>
               headers: { <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span> },<br>
               body: <span class="function">JSON.stringify</span>({<br>
@@ -742,7 +742,7 @@
     <p>Delete an order by its ID</p>
     <div class="code-block">
         <code>
-            <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/orders/delete/1'</span>, {<br>
+            <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/orders/delete/1'</span>, {<br>
               method: <span class="string">'DELETE'</span><br>
             })<br>
               .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())
@@ -767,7 +767,7 @@
                 <p>Retrieve a list of all posts</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/posts'</span>)<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/posts'</span>)<br>
                           .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())<br>
                           .<span class="function">then</span>(<span class="keyword">data</span> => <span class="keyword">console</span>.<span class="function">log</span>(<span class="keyword">data</span>))
                     </code>
@@ -798,7 +798,7 @@
                 <p>Retrieve a specific post by its ID</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/posts/1'</span>)<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/posts/1'</span>)<br>
                           .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())<br>
                           .<span class="function">then</span>(<span class="keyword">data</span> => <span class="keyword">console</span>.<span class="function">log</span>(<span class="keyword">data</span>))
                     </code>
@@ -828,7 +828,7 @@
                 <p>Create a new post with required fields</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/posts/create'</span>, {<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/posts/create'</span>, {<br>
                           method: <span class="string">'POST'</span>,<br>
                           headers: { <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span> },<br>
                           body: <span class="function">JSON.stringify</span>({<br>
@@ -869,7 +869,7 @@
                 <p>Update an existing post's information</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/posts/update/1'</span>, {<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/posts/update/1'</span>, {<br>
                           method: <span class="string">'PUT'</span>,<br>
                           headers: { <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span> },<br>
                           body: <span class="function">JSON.stringify</span>({<br>
@@ -910,7 +910,7 @@
                 <p>Delete a post by its ID</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/posts/delete/1'</span>, {<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/posts/delete/1'</span>, {<br>
                           method: <span class="string">'DELETE'</span><br>
                         })<br>
                           .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())
@@ -935,7 +935,7 @@
                 <p>Retrieve a list of all todos</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/todos'</span>)<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/todos'</span>)<br>
                           .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())<br>
                           .<span class="function">then</span>(<span class="keyword">data</span> => <span class="keyword">console</span>.<span class="function">log</span>(<span class="keyword">data</span>))
                     </code>
@@ -966,7 +966,7 @@
                 <p>Retrieve a specific todo by its ID</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/todos/1'</span>)<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/todos/1'</span>)<br>
                           .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())<br>
                           .<span class="function">then</span>(<span class="keyword">data</span> => <span class="keyword">console</span>.<span class="function">log</span>(<span class="keyword">data</span>))
                     </code>
@@ -996,7 +996,7 @@
                 <p>Create a new todo with required fields</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/todos/create'</span>, {<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/todos/create'</span>, {<br>
                           method: <span class="string">'POST'</span>,<br>
                           headers: { <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span> },<br>
                           body: <span class="function">JSON.stringify</span>({<br>
@@ -1037,7 +1037,7 @@
                 <p>Update an existing todo's information</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/todos/update/1'</span>, {<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/todos/update/1'</span>, {<br>
                           method: <span class="string">'PUT'</span>,<br>
                           headers: { <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span> },<br>
                           body: <span class="function">JSON.stringify</span>({<br>
@@ -1078,7 +1078,7 @@
                 <p>Delete a todo by its ID</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/todos/delete/1'</span>, {<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/todos/delete/1'</span>, {<br>
                           method: <span class="string">'DELETE'</span><br>
                         })<br>
                           .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())
@@ -1103,7 +1103,7 @@
                 <p>Retrieve a list of all comments</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/comments'</span>)<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/comments'</span>)<br>
                           .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())<br>
                           .<span class="function">then</span>(<span class="keyword">data</span> => <span class="keyword">console</span>.<span class="function">log</span>(<span class="keyword">data</span>))
                     </code>
@@ -1134,7 +1134,7 @@
                 <p>Retrieve a specific comment by its ID</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/comments/1'</span>)<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/comments/1'</span>)<br>
                           .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())<br>
                           .<span class="function">then</span>(<span class="keyword">data</span> => <span class="keyword">console</span>.<span class="function">log</span>(<span class="keyword">data</span>))
                     </code>
@@ -1164,7 +1164,7 @@
                 <p>Create a new comment with required fields</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/comments/create'</span>, {<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/comments/create'</span>, {<br>
                           method: <span class="string">'POST'</span>,<br>
                           headers: { <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span> },<br>
                           body: <span class="function">JSON.stringify</span>({<br>
@@ -1205,7 +1205,7 @@
                 <p>Update an existing comment's information</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/comments/update/1'</span>, {<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/comments/update/1'</span>, {<br>
                           method: <span class="string">'PUT'</span>,<br>
                           headers: { <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span> },<br>
                           body: <span class="function">JSON.stringify</span>({<br>
@@ -1246,7 +1246,7 @@
                 <p>Delete a comment by its ID</p>
                 <div class="code-block">
                     <code>
-                        <span class="function">fetch</span>(<span class="string">'http://localhost:8080/api/comments/delete/1'</span>, {<br>
+                        <span class="function">fetch</span>(<span class="string">'https://jsonbazaar.onrender.com/api/comments/delete/1'</span>, {<br>
                           method: <span class="string">'DELETE'</span><br>
                         })<br>
                           .<span class="function">then</span>(<span class="keyword">response</span> => <span class="keyword">response</span>.<span class="function">json</span>())
