@@ -4,6 +4,9 @@
 
 JSONbazaar provides **high-performance mock APIs** to help developers, testers, and businesses streamline their workflows. Whether you're learning API integration, testing an application, or building prototypes, JSONbazaar offers **blazing-fast response times and realistic data** without the need for a backend.
 
+## 🕸️ Deployed Link
+https://jsonbazaar.onrender.com/
+
 ## 🚀 Features
 - **Instant Mock APIs** – No backend setup required.
 - **Realistic Data Simulation** – Fetch structured, dynamic data for testing.
