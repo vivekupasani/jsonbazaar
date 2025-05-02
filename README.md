@@ -18,13 +18,13 @@ https://jsonbazaar.onrender.com/
 ### 1️⃣ Fetch Data from JSONbazaar
 Make a simple API call to fetch mock data:
 ```bash
-curl -X GET "https://api.jsonbazaar.com/users"
+curl -X GET "https://jsonbazaar.onrender.com/users"
 ```
 
 ### 2️⃣ Use in Your Application
 Example in JavaScript:
 ```javascript
-fetch("https://api.jsonbazaar.com/users")
+fetch("https://jsonbazaar.onrender.com/users")
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error("Error fetching data:", error));
