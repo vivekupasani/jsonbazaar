@@ -2,6 +2,8 @@ const express = require("express");
 const dotenv = require("dotenv").config();
 const cors = require("cors")
 const app = express();
+const cron = require('node-cron');
+const fetch = require('node-fetch')
 
 const PORT = process.env.PORT || 3000;
 
@@ -38,6 +40,17 @@ app.get("/documentation", (req, res) => {
 
 app.get("/about", (req, res) => {
   res.render("about");
+});
+
+// Keep-alive job (runs every 12 minutes)
+cron.schedule('*/12 * * * *', async () => {
+  try {
+    const url = `https://jsonbazaar.onrender.com`;
+    await fetch(url);
+    console.log(`[CRON] Pinged ${url} to keep server alive`);
+  } catch (err) {
+    console.error('[CRON] Error pinging server:', err);
+  }
 });
 
 // 404 PAGE NOT FOUND
