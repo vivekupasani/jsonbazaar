@@ -1,9 +1,9 @@
 const express = require("express");
 const dotenv = require("dotenv").config();
-const cors = require("cors")
+const cors = require("cors");
 const app = express();
-const cron = require('node-cron');
-const fetch = require('node-fetch')
+const cron = require("node-cron");
+const https = require("https");
 
 const PORT = process.env.PORT || 3000;
 
@@ -43,13 +43,29 @@ app.get("/about", (req, res) => {
 });
 
 // Keep-alive job (runs every 12 minutes)
-cron.schedule('*/12 * * * *', async () => {
+cron.schedule("*/12 * * * *", async () => {
   try {
-    const url = `https://jsonbazaar.onrender.com`;
-    await fetch(url);
-    console.log(`[CRON] Pinged ${url} to keep server alive`);
+    const url = `https://jsonbazaar.onrender.com/api/users`;
+    https.get(url, (res) => {
+      console.log(`[CRON] Pinged ${url} to keep server alive`);
+    }).on('error', (err) => {
+      console.error("[CRON] Error pinging server:", err);
+    });
   } catch (err) {
-    console.error('[CRON] Error pinging server:', err);
+    console.error("[CRON] Error pinging server:", err);
+  }
+});
+
+cron.schedule("*/6 * * * *", async () => {
+  try {
+    const url = `https://jsonbazaar.onrender.com/api/users/1`;
+    https.get(url, (res) => {
+      console.log(`[CRON] Pinged ${url} to keep server alive`);
+    }).on('error', (err) => {
+      console.error("[CRON] Error pinging server:", err);
+    });
+  } catch (err) {
+    console.error("[CRON] Error pinging server:", err);
   }
 });
 

@@ -47,6 +47,10 @@
             padding: 15px 0;
             border-bottom: 2px solid #edf2f7;
         }
+
+        .top-banner{
+            opacity: 100;
+        }
         
         .logo {
             font-size: 24px;
@@ -244,6 +248,51 @@
                 margin-top: 15px;
                 flex-wrap: wrap;
                 justify-content: center;
+                position: relative;
+            }
+            
+            .hamburger {
+                display: block;
+                cursor: pointer;
+                font-size: 24px;
+                margin-right: 10px;
+            }
+            
+            .menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                padding: 10px;
+                z-index: 10;
+            }
+            
+            .menu-toggle:checked ~ .menu {
+                display: flex;
+            }
+            
+            .menu form {
+                margin-bottom: 10px;
+            }
+            
+            .menu button {
+                width: 100%;
+                text-align: left;
+                padding: 10px;
+                border: none;
+                background: none;
+                cursor: pointer;
+                color: #4a5568;
+                font-weight: 500;
+                font-size: 16px;
+            }
+            
+            .menu button:hover {
+                color: #6a11cb;
             }
             
             nav a, nav form button {
@@ -257,6 +306,14 @@
             
             .feature-grid {
                 grid-template-columns: 1fr;
+            }
+         
+            .top-banner{
+                display: none;
+            }
+            
+            .container {
+                padding: 20px 10px;
             }
         }
     </style>
